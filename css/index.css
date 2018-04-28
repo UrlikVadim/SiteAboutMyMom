@@ -1,0 +1,702 @@
+#main {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 80%;
+}
+
+@font-face {
+    font-family: "SegoePrintRegular";
+    src: url("../fonts/SegoePrintRegular/SegoePrintRegular.eot");
+    src: url("../fonts/SegoePrintRegular/SegoePrintRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/SegoePrintRegular/SegoePrintRegular.woff") format("woff"), url("../fonts/SegoePrintRegular/SegoePrintRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-image: url(../res/background.jpg);
+    font-family: Geneva, SegoePrintRegular, Helvetica, sans-serif;
+    width: 100%;
+}
+
+table {
+    overflow: visible;
+    table-layout: fixed;
+    color: rgb(255, 153, 0);
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid rgb(255, 153, 0);
+}
+
+#bar {
+    background-color: white;
+    cursor: pointer;
+}
+
+th {
+    border: 1px solid rgb(255, 153, 0);
+}
+
+#fullFoto {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(126, 124, 124, 0.637);
+}
+
+#bigFoto {
+    z-index: 2;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: rgb(255, 255, 255);
+}
+
+#content {
+    display: none;
+}
+
+#content-1 {
+    display: none;
+    font-size: 180%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgba(0, 255, 255, 0.945);
+}
+
+#content-1 p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#con1-1 {
+    font-size: 110%;
+    color: rgb(255, 0, 200);
+}
+
+#con1-2 {
+    font-size: 70%;
+    color: rgb(255, 0, 200);
+}
+
+.con1-3 {
+    font-weight: 600;
+    color: rgb(120, 0, 175);
+}
+
+#leftfoto {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin-top: 5%;
+    right: 5%;
+    border: 1px solid rgb(255, 153, 0);
+    border-radius: 10%;
+    background-size: cover;
+}
+
+#rightfoto {
+    overflow: hidden;
+    float: right;
+    position: relative;
+    margin-top: 5%;
+    left: 5%;
+    border: 1px solid rgb(255, 153, 0);
+    border-radius: 10%;
+    background-size: cover;
+}
+
+#content-2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: none;
+    background-color: rgba(0, 255, 179, 0.822);
+}
+
+#con-2-img {
+    float: left;
+}
+
+#con2content {
+    margin: auto;
+}
+
+.con-2-content {
+    color: blue;
+    font-size: 130%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.con-2-content p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 100px;
+}
+
+#con2a {
+    font-size: 130%;
+}
+
+.dreams,
+.goldHands {
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 2%;
+    bottom: 0;
+    width: 20%;
+    border: 1px solid rgb(255, 153, 0);
+}
+
+.dreams {
+    left: 0;
+}
+
+.goldHands {
+    right: 0;
+}
+
+.dreamsHead,
+.goldHandsHead {
+    height: 5%;
+    width: 100%;
+    font-size: 130%;
+    text-align: center;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    color: red;
+    background-color: rgb(0, 194, 74);
+    border-bottom: 1px solid rgb(255, 153, 0);
+}
+
+.content2and3 {
+    position: absolute;
+    overflow: hidden;
+    top: 5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 247, 134);
+    border: 1px solid rgb(255, 153, 0);
+}
+
+.buttonDown1,
+.buttonUp1,
+.buttonDown2,
+.buttonUp2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+.buttonDown1,
+.buttonDown2 {
+    bottom: 1%;
+}
+
+.buttonUp1,
+.buttonUp2 {
+    top: 1%;
+}
+
+#con3up1,
+#con3up2,
+#con4up1,
+#con4up2 {
+    transform: scale(1, -1);
+}
+
+#dreamsSlide1,
+#dreamsSlide2 {
+    position: relative;
+    width: 100%;
+}
+
+#goldHandsSlide1,
+#goldHandsSlide2 {
+    position: relative;
+    width: 100%;
+}
+
+.minContent {
+    font-size: 80%;
+    text-align: left;
+    overflow: hidden;
+    color: rgb(0, 255, 255);
+    background-color: rgb(255, 153, 0);
+    border-top: 1px solid rgb(0, 255, 200);
+    border-bottom: 1px solid rgb(0, 255, 200);
+    width: 100%;
+}
+
+.minContent p {
+    margin: 0;
+}
+
+.minContentImage {
+    float: left;
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+}
+
+#content-3 {
+    position: relative;
+    display: none;
+    background-color: rgba(103, 253, 140, 0.733);
+}
+
+#content-3middle {
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    color: red;
+    font-size: 120%;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 100%;
+}
+
+#content-3-1,
+#content-3-2,
+#content-3-3,
+#content-3-4,
+#content-3-5 {
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+#content-3-1-1,
+#content-3-1-2 {
+    margin-top: 1%;
+    font-size: 80%;
+    margin-left: 5%;
+    display: none;
+    cursor: pointer;
+}
+
+.ahref {
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: none;
+    font-size: 70%;
+}
+
+.ahref p {
+    font-size: 140%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#content-4 {
+    position: relative;
+    display: none;
+    background-color: rgba(0, 255, 213, 0.897);
+}
+
+#content-4middle {
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+#con-4-1,
+#con-4-2,
+#con-4-3,
+#con-4-4,
+#con-4-5 {
+    margin-top: 2%;
+    position: relative;
+    color: rgb(0, 2, 95);
+    font-size: 150%;
+    cursor: pointer;
+}
+
+#con-4-1-content,
+#con-4-2-content,
+#con-4-3-content,
+#con-4-4-content,
+#con-4-5-content {
+    margin-top: 0;
+}
+
+.con-4-content {
+    position: relative;
+    color: blue;
+    font-size: 75%;
+}
+
+.con-4-content p {
+    margin-top: 1px;
+    margin-bottom: 0;
+    text-indent: 20px;
+}
+
+#content-5 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 180%;
+    text-align: center;
+    display: none;
+    background-color: rgba(0, 255, 234, 0.507);
+}
+
+#five1,
+#five2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.fiveSlide {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+#ref {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    background-color: rgb(49, 210, 250);
+    border: 1px solid rgb(255, 153, 0)(17, 0, 255);
+}
+
+#foto {
+    overflow: visible;
+    margin-top: 2%;
+    text-align: center;
+    background-color: rgb(143, 188, 255);
+    border: 1px solid rgb(255, 153, 0);
+    width: 100%;
+}
+
+#fotogalery {
+    position: relative;
+    bottom: 0.5em;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 180%;
+    text-align: center;
+    color: rgb(255, 153, 0);
+    background-color: rgb(0, 140, 255);
+    border: 1px solid rgb(255, 153, 0);
+}
+
+#mainContent {
+    position: relative;
+    overflow: hidden;
+    width: inherit;
+}
+
+#mainFotogaleryContent {
+    display: inline-block;
+    background-color: white;
+    width: inherit;
+}
+
+.slideFoto {
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#rightScroll {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    height: inherit;
+    z-index: 1;
+}
+
+#leftScroll :hover {
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+#rightScroll :hover {
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+#leftScroll {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    float: left;
+    height: inherit;
+    z-index: 1;
+}
+
+.boxhref {
+    color: rgb(0, 0, 0);
+    width: 28%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: inline-block;
+}
+
+#infobardm {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: none;
+    position: fixed;
+    color: black;
+    background-color: white;
+    top: 0;
+    bottom: 85%;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    border: 3px solid black;
+    font-weight: 600;
+}
+
+#backPage {
+    position: absolute;
+    top: 1%;
+    bottom: 1%;
+    width: 20%;
+    right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 3%;
+    display: inline-block;
+    border: 3px solid black;
+    font-size: 160%;
+    text-align: center;
+}
+
+#colorView,
+#fontSize {
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 3%;
+    display: inline-block;
+    width: 20%;
+    height: 70%;
+    border: 3px solid black;
+}
+
+.textsight {
+    font-size: 135%;
+    text-align: center;
+    width: 100%;
+    height: 40%;
+}
+
+#color1,
+#color2,
+#color3,
+#font1,
+#font2,
+#font3 {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+    height: 30%;
+    border: 3px solid black;
+}
+
+#font1 {
+    font-size: 80%;
+}
+
+#font2 {
+    font-size: 110%;
+}
+
+#font3 {
+    font-size: 130%;
+}
+
+#color1 {
+    background-color: white;
+    color: black;
+}
+
+#color2 {
+    background-color: black;
+    color: white;
+}
+
+#color3 {
+    background-color: rgb(0, 162, 255);
+    color: blue;
+}
+
+#infobardmOpen {
+    display: block;
+    position: fixed;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    right: 5%;
+    z-index: 4;
+}
+
+#footer {
+    margin-top: 20px;
+    background-color: rgba(0, 183, 255, 0.822);
+    width: 100%;
+    border: 1px solid rgb(132, 0, 255);
+}
+
+#headfooter {
+    font-size: 250%;
+    text-align: center;
+    color: blue;
+    margin-bottom: 50px;
+}
+
+#footer p {
+    margin: 0;
+}
+
+textarea {
+    font-family: Geneva, SegoePrintRegular, Helvetica, sans-serif;
+    resize: none;
+    color: rgb(7, 0, 107);
+    background-color: rgb(0, 174, 255);
+    border: 1px solid rgb(119, 0, 255);
+}
+
+#name {
+    width: 50%;
+    height: 40px;
+    font-size: 27px;
+    overflow: hidden;
+}
+
+#text {
+    width: 100%;
+    height: 100px;
+    font-size: 27px;
+}
+
+#submit {
+    font-size: 150%;
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    height: 40px;
+    color: blue;
+    background-color: rgb(153, 0, 255);
+    vertical-align: middle;
+    text-align: center;
+}
+
+.delete {
+    left: 30%;
+    display: none;
+}
+
+.addcoment {
+    display: none;
+    left: 60%;
+}
+
+.comment {
+    font-size: 150%;
+    color: blue;
+}
+
+.commenthead {
+    text-align: center;
+    font-size: 250%;
+    color: blue;
+}
+
+#addComment,
+.Comment {
+    border: 1px solid rgb(183, 0, 255);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.nameComment {
+    width: 100%;
+    height: auto;
+    font-size: 250%;
+    color: blue;
+}
+
+.textComment {
+    width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 150%;
+    color: blue;
+}
+
+.deleteComment {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 150%;
+    color: blue;
+    background-color: rgb(255, 136, 0);
+    border: 1px solid blue;
+    padding: 1%;
+}
+
+.visibleComment {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 150%;
+    color: blue;
+    background-color: rgb(0, 217, 255);
+    border: 1px solid blue;
+    padding: 1%;
+}
+
+#addfooter {
+    color: blue;
+    text-align: center;
+    display: none;
+    font-size: 250%;
+    border: 2px solid rgb(153, 0, 255);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
